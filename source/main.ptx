@@ -6,13 +6,13 @@
     <macros>
       \newcommand{\R}{\mathbb R}
     </macros>
-    <latax-image-preamble>
+    <latex-image-preamble>
       \usepackage{tikz}
-    </latax-image-preamble>
+    </latex-image-preamble>
   </docinfo>
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
+    <title>My Greatest Book</title>
     <subtitle>An example to get you started</subtitle>
 
     <frontmatter xml:id="frontmatter">
@@ -49,9 +49,19 @@
     <chapter xml:id="chapter-title">
       <title>Chapter title</title>
 
-      <section xml:id="section-title">
-        <title>Section title</title>
-        <p>Hello</p>
+      <section xml:id="section-demo-pretext">
+        <title>Demoing some PreTeXt features</title>
+        <p>Hello <m>x^2+y^2=z^2</m>.</p>
+          <p>And <me>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</me>.</p>
+          <figure width="80%" xml:id="circle">
+            <caption>A circle</caption>
+            <image xml:id="circle-tikz">
+              <description>A circle of radius three centered at the origin.</description>
+              <asymptote>
+               draw(circle((0,0),3));
+              </asymptote>
+            </image>
+          </figure>
       </section>
 
     </chapter>
@@ -60,7 +70,8 @@
       <title>Backmatter</title>
 
       <colophon>
-        <p> This book was authored in <pretext />. </p>
+        <p> This book was authored in <pretext />. 
+        Wasn't <xref ref="section-demo-pretext"/> amazing?</p>
       </colophon>
 
     </backmatter>
