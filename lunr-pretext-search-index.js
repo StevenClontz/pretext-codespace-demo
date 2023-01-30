@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Demoing some PreTeXt features",
-  "body": " Demoing some PreTeXt features  Hello .  And .   A circle   A circle of radius three centered at the origin.     "
+  "body": " Demoing some PreTeXt features  Hello .  And .   A circle   A circle of radius three centered at the origin.      "
 },
 {
   "id": "circle",
